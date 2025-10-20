@@ -43,7 +43,7 @@
 }
 .bannerWrapperHome .contentWrapper h1{
     color: white;
-    font-size: clamp(20px, 3vw, 64px);
+    font-size: clamp(28px, 2vw, 64px);
     font-weight: 900;
 }
 .bannerWrapperHome .contentWrapper h1 span{
@@ -59,7 +59,7 @@
 
 .bannerWrapperHome .contentWrapper p{
     color: #F9F3E3;
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: clamp(16px, 2vw, 24px);
     margin-top: 0.5rem;
     margin-bottom: 2.5rem;
 }
@@ -74,7 +74,7 @@
 
 .firstSection{
     margin-top: 150px;
-    padding: 0 clamp(60px, 10vw, 200px);
+    padding: 0 clamp(60px, 7vw, 200px);
 }
 
 
@@ -91,6 +91,7 @@
     border-radius: 10px;
     width: fit-content;
     color: white;
+    text-align: center;
     font-style: italic;
     margin-bottom: 1rem;
 }
@@ -116,6 +117,7 @@
 .headerDescription .cta{
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 .primaryBtn a, .primaryBtn{
     padding: 0.7rem 1.5rem;
@@ -251,6 +253,17 @@
   max-width: 900px;
   height: 400px;
 }
+.gridWrapper .firstGridSection .grid .imgWrapper{
+     width:300px;
+
+}
+.gridWrapper .firstGridSection .grid .imgWrapper img{
+     width:300px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 
 .material-symbols-outlined {
@@ -350,8 +363,7 @@
     padding: 0 1.6rem;
     border-radius: 10px;
     background-color: #EDFFF0;
-        margin-top: 50px;
-
+    margin-top: 50px;
     display: flex;
     gap: 20px;
 }
@@ -402,7 +414,7 @@
 .formWrapper .section{
     display: flex;
     gap: 20px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .input-field{
     width: 45%;
@@ -469,4 +481,101 @@ form .primaryBtn:hover{
     /* transition: 0.3s all ease-in-out; */
     color: rgb(34, 34, 34);
     cursor: pointer;
+}
+.smallHeader{
+    display: none;
+}
+
+@media (max-width: 480px) {
+  /* styles for small phones */
+  
+}
+
+
+/* ===========================
+   📲 Mobile Devices (Landscape) 
+   481px – 767px width
+   =========================== */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* styles for large phones / small devices */
+ 
+}
+
+
+/* ===========================
+   💻 Tablets (Portrait & Landscape)
+   768px – 1024px width
+   =========================== */
+@media  (max-width: 1025px) {
+  /* styles for tablets */
+  .firstSection .headerWrapper{
+    gap: 50px;
+    flex-direction: column;
+}
+.firstSection .headerTitle {
+    width: 100vw;
+}
+.firstSection .headerDescription p{
+    width: 100%;
+}
+.firstSection .headerDescription{
+    width: 100%;
+    
+}
+.largeHeader{
+    display: none;
+}
+.smallHeader{
+    display: block;
+}
+.firstSection{
+    margin-top: 30px;
+}
+ .secondSection, .thirdSection .fourthSection{
+    margin-top: 100px;
+}
+.gridWrapper .firstGridSection{
+   flex-direction: column;
+}
+
+.grid{
+    width: 100% !important;
+    max-width: none;
+}  
+.gridWrapper .secondGridSection {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.gridWrapper .left{
+    width: 100% !important;
+    max-width: none !important;
+}
+.gridWrapper .right .grid{
+    flex-direction: row !important;
+}
+.right .grid .imgWrapper{
+    height: 100% !important;
+}
+.right .grid img{
+    height: 100% !important; 
+    width: 300px !important;
+}
+
+.grid{
+    height: 400px !important;
+}
+.right, .left{
+    height: fit-content !important;
+    max-width: none !important;
+    width: 100%;
+}
+
+.fourthSection .sectionContent{
+    flex-direction: column !important;
+    align-items: center;
+}
+.fourthSection .sectionContent > * {
+    width: 100%;
+}
 }

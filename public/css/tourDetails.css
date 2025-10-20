@@ -88,3 +88,31 @@
     height: 0;
     overflow: hidden;
 }
+
+
+@media (max-width: 480px) {
+  /* styles for small phones */
+  
+}
+
+
+/* ===========================
+   📲 Mobile Devices (Landscape) 
+   481px – 767px width
+   =========================== */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* styles for large phones / small devices */
+ 
+}
+
+
+/* ===========================
+   💻 Tablets (Portrait & Landscape)
+   768px – 1024px width
+   =========================== */
+@media  (max-width: 1025px) {
+  .tourContent{
+    width: 100vw !important;
+    margin: 50px 0 100px 0;
+  }
+}
