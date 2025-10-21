@@ -92,7 +92,9 @@
 
 @media (max-width: 480px) {
   /* styles for small phones */
-  
+  .tourContent{
+    padding: 20px;
+  }
 }
 
 

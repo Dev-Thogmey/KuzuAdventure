@@ -48,3 +48,17 @@ nav .linkWrapper{
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 480px) {
+  /* styles for small phones */
+  
+    nav img{
+        height: auto;
+        width: 100px;
+        object-fit: cover;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+}

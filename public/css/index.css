@@ -77,7 +77,7 @@
 
 .firstSection{
     margin-top: 150px;
-    padding: 0 clamp(60px, 7vw, 200px);
+    padding: 0 clamp(20px, 5vw, 200px);
 }
 
 
@@ -266,7 +266,9 @@
     object-fit: cover;
     border-radius: 10px;
 }
-
+.grid img{
+    border-radius: 10px;;
+}
 
 
 .material-symbols-outlined {
@@ -324,11 +326,11 @@
 
 .gridWrapper .secondGridSection .right .grid{
     height: 100%;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 .gridWrapper .secondGridSection .right .grid img{
-    height: 100%;
-    width: 100%;
+    height: 100% !important;
+    width: 100% !important;
 }
 .gridWrapper .secondGridSection .right .grid .imgWrapper{
     height: 55%;
@@ -337,7 +339,7 @@
 }
 
 .fourthSection{
-    padding: 0 clamp(60px, 10vw, 200px);
+    padding: 0 clamp(20px, 5vw, 200px);
     margin: 150px 0;
 }
 .fourthSection .headerWrapper{
@@ -425,7 +427,7 @@
     gap: .5rem;
     flex-direction: column;
     align-items: start;
-    min-width: 300px;
+    min-width: 200px;
     margin-bottom: 1rem;
 }
 .input-field input{
@@ -491,8 +493,12 @@ form .primaryBtn:hover{
 
 @media (max-width: 480px) {
   /* styles for small phones */
-  p,a{
-    font-size: 20px !important;
+  
+  .formWrapper{
+    padding: 1rem;
+  }
+  .faqWrapper{
+    padding: 1rem !important;
   }
 }
 
@@ -547,6 +553,7 @@ form .primaryBtn:hover{
 }
  .secondSection, .thirdSection .fourthSection{
     margin-top: 100px;
+    padding: 0 20px !important;
 }
 .gridWrapper .firstGridSection{
    flex-direction: column;

@@ -35,7 +35,7 @@ footer .background .bird{
     
 }
 .footerContent{
-padding: clamp(60px, 10vw, 120px);
+padding: clamp(20px, 5vw, 120px);
 
 }
 .footerContent .topContent{
